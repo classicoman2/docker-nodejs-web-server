@@ -15,12 +15,16 @@ M'he ajudat d'aquestes pàgines, entre d'altres:
 
 1.- Dins de la carpeta on està el `Dockerfile`, Crea la imatge amb
 
+```js
     sudo docker build -t provanode2 .
+```
 
 2.- Executa el contenidor amb 
 
+```js 
     # -d: detached (background)   /  -p , el primer port és del host
     sudo docker run -d -p 8080:80 provanode2
+```
 
 ## Ampliació
 
