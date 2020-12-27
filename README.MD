@@ -16,10 +16,10 @@ En aquesta versió, encara poc avançada,
  - En fer `docker run` se copia el codi del servidor `/app` a dins del working directory
  - En fer canvis en `/app/ , se tornen a carregar al working directori _només en reiniciar el contenidor_
 
-## Todo
+## Todo Versió 1.2
 
-- [ ] Afegir `package.json` i `package-lock.json` i `npm i` per instal·lar els paquets
-- [ ] Afegir un **script inicial** en iniciar el contenidor que executi `npm i` per actualitzar canvis en `node_modules` i en fitxers `package*.json`
+- [x] Afegir `package.json` i `package-lock.json` i `npm i` per instal·lar els paquets
+- [x] Afegir un **script inicial** al contenidor que executi `npm i` per actualitzar fitxers `package*.json` i `node_modules` 
 
 ## Webgrafia
 
