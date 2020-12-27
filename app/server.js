@@ -1,7 +1,12 @@
 var http = require('http');
+var fs = require('fs');
+var uppercase = require('upper-case');
 
-//create a server object:
 http.createServer(function (req, res) {
-  res.write('Hola mon! zz'); //write a response to the client
-  res.end(); //end the response
-}).listen(80); //the server object listens on port 8080doc
+  fs.readFile('assets/demofile.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.write(uppercase.upperCase("estic provant el package upper-case"))
+    return res.end();
+  });
+}).listen(80);
